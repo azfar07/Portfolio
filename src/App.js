@@ -5,7 +5,7 @@ import Navbar from './Components/Navbar';
 function App() {
   return (
     <div>
-      <Navbar />
+      <Navbar /> 
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
