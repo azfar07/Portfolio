@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.cusImg {
+  height: 39rem;
+}
+
 /* .App {
   text-align: center;
 }

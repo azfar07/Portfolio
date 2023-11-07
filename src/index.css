@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities
+@tailwind utilities;
+
+/* .cusImg {
+  height: 10px;
+} */
