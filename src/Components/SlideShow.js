@@ -31,14 +31,14 @@ function SlideShow() {
       {images.map((image, index) => (
         <div
           key={index}
-          className={`absolute min-w-full h-full transition-opacity duration-500 ${
+          className={`absolute min-w-full transition-opacity duration-500 ${
             index === currentSlide ? "opacity-100" : "opacity-0"
           }`}
         >
           <img
             src={image}
             alt={`Slide ${index + 1}`}
-            className="w-full cusImg object-cover"
+            className="object-cover w-full cusImg"
           />
         </div>
       ))}
@@ -55,7 +55,7 @@ function SlideShow() {
         ))}
       </div>
       <button
-        className="absolute top-28 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        className="absolute left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer top-28 group focus:outline-none"
         onClick={prevSlide}
       >
   <span className={`inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-green-500 dark:group-hover:bg-green-500 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none`}>
@@ -78,7 +78,7 @@ function SlideShow() {
         </span>
       </button>
       <button
-        className="absolute top-28 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        className="absolute right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer top-28 group focus:outline-none"
         onClick={nextSlide}
       >
   <span className={`inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-green-500 dark:group-hover:bg-green-500 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none`}>
