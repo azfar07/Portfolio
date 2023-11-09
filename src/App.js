@@ -4,6 +4,10 @@ import Navbar from "./Components/Navbar";
 import SlideShow from "./Components/SlideShow";
 import myImage from './Components/assets/imageReact.png';
 import CompanyInfo from "./Components/CompanyInfo";
+import FeeFree from "./Components/FeeFree";
+import PaidEarly from "./Components/PaidEarly";
+import MonthlyFees from "./Components/MonthlyFees";
+import DebitCard from "./Components/DebitCard";
 function App() {
   return (
     <div className="flex flex-col justify-center min-h-full pl-4 pr-4 min-w-fit">
@@ -17,8 +21,17 @@ function App() {
       <div className="flex-grow w-full mx-auto h-max">
         <CompanyInfo />
       </div>
-      <div className="flex-grow w-full mx-auto h-max">
-        {/* <CompanyInfo /> */}
+      <div>
+        <FeeFree />
+      </div>
+      <div className="bg-gray-50">
+        <PaidEarly />
+      </div>
+      <div>
+        <MonthlyFees />
+      </div>
+      <div className="bg-gray-50">
+        <DebitCard />
       </div>
     </div>
   );

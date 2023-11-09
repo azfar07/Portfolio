@@ -1,13 +1,13 @@
 import React from "react";
-import PaidEarlyCard from "./assets/PaidEarlyCard.png";
+import DebCard from "./assets/DebitCard.png";
 import Btn from "./Button";
-function PaidEarly() {
+function DebitCard() {
   return (
     <div className="max-w-screen-xl p-4 mx-auto mt-36 mb-32">
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
         <div className="md:w-1/2">
           <img
-            src={PaidEarlyCard}
+            src={DebCard}
             alt="Your Image Alt Text"
             className="w-96 h-auto"
           />
@@ -15,11 +15,12 @@ function PaidEarly() {
         <div className="md:w-1/2 mt-8 md:mt-0 ml-4">
           <div className="pr-8 md:pr-12">
             <h1 className="font-sans text-5xl font-bold text-left text-black sm:text-4xl">
-              Get paid early
+              A new way to build credit
             </h1>
             <p className="max-w-screen-xl mx-auto mt-4 font-sans text-base text-center md:text-left text-black">
-              Set up direct deposit and get your paycheck up to 2 days earlier
-              than some of your co-worker.²
+              Help increase your FICO Score® by an average of 30 points with
+              our new secured credit card.⁴ No interest, no annual fees, no
+              credit check to apply. apply.⁵
             </p>
             <div className="pt-2 ">
               <Btn
@@ -29,6 +30,9 @@ function PaidEarly() {
                 }
                 name={"Learn More >"}
               />
+              <p className="max-w-screen-xl mx-auto mt-4 font-sans text-xs text-center md:text-left text-black">
+              Regular on-time payment history can have positive impact on your credit score.
+            </p>
             </div>
           </div>
         </div>
@@ -37,4 +41,4 @@ function PaidEarly() {
   );
 }
 
-export default PaidEarly;
+export default DebitCard;

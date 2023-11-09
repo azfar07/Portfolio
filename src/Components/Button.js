@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Button(props) {
+function Btn(props) {
   return (
     // <div className="flex items-center justify-center mt-96">
     <div className={props.className}>
@@ -10,4 +10,4 @@ function Button(props) {
   )
 }
 
-export default Button
+export default Btn
