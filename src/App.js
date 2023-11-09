@@ -11,11 +11,14 @@ function App() {
       <div className="flex-grow w-full mx-auto h-max">
         <SlideShow />
       </div>
-      <div className="w-full mt-80"> {/* Add margin-top (mt-8) to create space */}
-        <img src={myImage} alt="Image Alt Text" className="w-full" /> {/* Use w-full to ensure the image resizes properly */}
+      <div className="w-full mt-80"> 
+        <img src={myImage} alt="Image Alt Text" className="w-full" /> 
       </div>
-      <div>
+      <div className="flex-grow w-full mx-auto h-max">
         <CompanyInfo />
+      </div>
+      <div className="flex-grow w-full mx-auto h-max">
+        {/* <CompanyInfo /> */}
       </div>
     </div>
   );
