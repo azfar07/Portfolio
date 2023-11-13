@@ -4,7 +4,7 @@ import {
   ResponsiveContainer
 } from "react-stacked-center-carousel";
 
-import { Slide } from "./Slide";
+import { Slide } from "./../SlideShow/Slide";
 
 const data = [
   {

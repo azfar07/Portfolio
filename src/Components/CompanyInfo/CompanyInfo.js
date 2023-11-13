@@ -1,8 +1,8 @@
 import React from "react";
 import CompanyInfoNav from "./CompanyInfoNav";
-import imgStar from "./assets/5starReact.png";
-import img1Star from "./assets/1starReact.png";
-import CenteredHeading from "./CenteredHeading";
+import imgStar from "./../assets/5starReact.png";
+import img1Star from "./../assets/1starReact.png";
+import CenteredHeading from "./../Constant/CenteredHeading";
 import MirrorCarousel from "./MirrorCarousel";
 function CompanyInfo() {
   return (

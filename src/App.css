@@ -1,8 +1,7 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 .cusImg {
   height: 39rem;
 }
@@ -28,7 +27,7 @@
   transition: all 300ms ease;
   cursor: pointer;
   width: 100%;
-  height:300px;
+  height: 300px;
   border-radius: 15px;
   position: relative;
   background-color: #ffffff;
@@ -101,15 +100,68 @@
   flex-direction: row;
   margin: 25px;
 }
-/* @layer components {
-  .btn {
-    @apply px-4 py-2 text-purple-500 transition duration-300 bg-white border border-purple-500 rounded-full hover:bg-purple-500 hover:text-white;
+
+
+.c-card {
+  img {    
+    transition: transform .3s ease-in-out; 
+  }
+  
+  &:hover {
+    img {
+      transform: scale(1.05)
+    }
+  }
+}
+
+/* html, body {
+  @apply box-border p-0 m-0 font-sans;
+}
+
+body {
+  @apply m-2;
+}
+
+.wrapper {
+  @apply grid justify-center gap-2;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+}
+
+.card {
+  @apply flex flex-col justify-between overflow-hidden transition-transform duration-200 ease-in rounded-md shadow-md cursor-pointer ;
+
+  .card__image {
+    @apply object-cover w-full h-48;
+  }
+
+  .card__body {
+    @apply flex flex-col;
+  }
+
+  .card__title {
+    @apply p-4;
+  }
+
+  .card__description {
+    @apply p-0 sm:p-4;
+  }
+
+  .card__btn {
+    @apply p-4 m-4 text-lg font-bold text-red-500 transition duration-200 ease-in border-2 border-red-500 rounded-md outline-none cursor-pointer;
+
+    &:hover {
+      @apply text-white bg-red-500;
+    }
   }
 } */
+
+
 @layer components {
   .btn {
-    @apply px-24 py-2 font-sans text-purple-500 transition duration-300 bg-white border border-purple-500 rounded-full ;
+    @apply px-24 py-2 font-sans text-purple-500 transition duration-300 bg-white border border-purple-500 rounded-full;
   }
+
+ 
 }
 
 /* .App {
