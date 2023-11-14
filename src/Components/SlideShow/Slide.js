@@ -5,7 +5,7 @@ import { StackedCarouselSlideProps } from "react-stacked-center-carousel";
 export const Slide = React.memo(function (StackedCarouselSlideProps) {
   const { data, dataIndex, isCenterSlide, swipeTo, slideIndex } =
     StackedCarouselSlideProps;
-debugger
+// debugger
   const coverImage = data[dataIndex].image;
   const text = data[dataIndex].text;
 

@@ -1,20 +1,31 @@
 import React, { useEffect, useState } from "react";
 import SlideContent from "./SlideContent";
-
+import img1 from "./../assets/istockphoto-1165045378-1024x1024.jpg"
+import img2 from "./../assets/istockphoto-1212778161-1024x1024.jpg"
+import img3 from "./../assets/istockphoto-1278838508-1024x1024.jpg"
+import img4 from "./../assets/istockphoto-1310904689-1024x1024.jpg"
+import img5 from "./../assets/istockphoto-511785712-1024x1024.jpg"
+import img6 from "./../assets/istockphoto-902871342-1024x1024.jpg"
+import img7 from "./../assets/istockphoto-902871382-1024x1024.jpg"
+import img8 from "./../assets/new-england-village-in-fall-1683762.jpg"
 function SlideShow() {
   const [images, setImages] = useState([]);
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     // debugger
-    const apiKey = "40531442-e351c9d5bd30fac7635018e88"; // Your Pixabay API key
-    const apiUrl = `https://pixabay.com/api/?key=${apiKey}&q=yellow+flowers&image_type=photo&pretty=true`;
+    // const apiKey = "40531442-e351c9d5bd30fac7635018e88"; // Your Pixabay API key
+    // const apiUrl = `https://pixabay.com/api/?key=40531442-e351c9d5bd30fac7635018e88&q=yellow+flowers&image_type=photo&pretty=true`;
 
-    fetch(apiUrl)
-      .then((response) => response.json())
-      .then((data) => {
-        setImages(data.hits.map((photo) => photo.webformatURL));
-      });
+    // fetch(apiUrl)
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     // debugger
+    //     console.log('data===>',data)
+    //     setImages(data.hits.map((photo) => photo.webformatURL));
+    //   });
+    const localImages = [img1, img2,img3,img4,img5,img6,img7,img8];
+    setImages(localImages);
   }, []);
 
   const nextSlide = () => {
@@ -26,6 +37,8 @@ function SlideShow() {
       (prevSlide) => (prevSlide - 1 + images.length) % images.length
     );
   };
+  // debugger
+  console.log("images==>",images)
   return (
     <div className="relative w-full h-80">
       {images.map((image, index) => (
