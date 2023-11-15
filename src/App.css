@@ -1,10 +1,167 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 .cusImg {
   height: 39rem;
+}
+
+.card .card-button {
+  position: absolute;
+  top: 43%;
+  box-shadow: none;
+  border-radius: 5px;
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+}
+.card .card-button.right {
+  right: 0%;
+}
+.react-stacked-center-carousel {
+  padding: 20px 0;
+  overflow: visible !important;
+}
+
+.card-card {
+  transition: all 300ms ease;
+  cursor: pointer;
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.card-card:hover {
+  transform: scale(1.05);
+}
+
+.react-stacked-center-carousel-slide-0 .card-card {
+  cursor: default;
+}
+
+.react-stacked-center-carousel-slide-0 .card-card:hover {
+  transform: none;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+}
+
+.card-card .card-overlay {
+  user-select: none;
+  position: absolute;
+  background-color: #00000099;
+  transition: all 300ms ease;
+  border-radius: 15px;
+}
+
+.card-card:hover .card-overlay {
+  background-color: #0000002d;
+}
+
+.react-stacked-center-carousel-slide-0 .card-overlay {
+  background-color: #00000099 !important;
+}
+
+.card-card .cover-image {
+  object-fit: cover;
+}
+
+.card-card .cover {
+  position: absolute;
+  transition: opacity 300ms ease;
+}
+.react-stacked-center-carousel-slide-0 .card-card .cover {
+  transition: opacity 300ms ease, z-index 0ms 300ms;
+}
+
+.card-card .cover.on {
+  opacity: 1;
+  z-index: 1;
+}
+
+.card-card .cover.off {
+  opacity: 0;
+  z-index: -1;
+}
+
+.card-card .detail {
+  display: flex;
+}
+.card-card .video {
+  width: 20%;
+}
+.card-card .discription {
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+}
+
+
+.c-card {
+  img {    
+    transition: transform .3s ease-in-out; 
+  }
+  
+  &:hover {
+    img {
+      transform: scale(1.05)
+    }
+  }
+}
+
+/* html, body {
+  @apply box-border p-0 m-0 font-sans;
+}
+
+body {
+  @apply m-2;
+}
+
+.wrapper {
+  @apply grid justify-center gap-2;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+}
+
+.card {
+  @apply flex flex-col justify-between overflow-hidden transition-transform duration-200 ease-in rounded-md shadow-md cursor-pointer ;
+
+  .card__image {
+    @apply object-cover w-full h-48;
+  }
+
+  .card__body {
+    @apply flex flex-col;
+  }
+
+  .card__title {
+    @apply p-4;
+  }
+
+  .card__description {
+    @apply p-0 sm:p-4;
+  }
+
+  .card__btn {
+    @apply p-4 m-4 text-lg font-bold text-red-500 transition duration-200 ease-in border-2 border-red-500 rounded-md outline-none cursor-pointer;
+
+    &:hover {
+      @apply text-white bg-red-500;
+    }
+  }
+} */
+
+
+@layer components {
+  .btn {
+    @apply px-24 py-2 font-sans text-purple-500 transition duration-300 bg-white border border-purple-500 rounded-full;
+  }
+
+ 
 }
 
 /* .App {
