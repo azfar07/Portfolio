@@ -27,20 +27,21 @@ const Accordion = ({ data }) => {
                 "radix-state-open:rounded-t-lg radix-state-closed:rounded-none",
                 "focus:outline-none",
                 "inline-flex w-full items-center justify-between px-4 py-5 text-left",
-                "border-b"
+                "border-b",
+                // "bg-green-500"
               )}
             >
-              <span className="text-sm font-medium">{displayText}</span>
+              <span className="text-sm font-medium ">{displayText}</span>
               <FiPlus
                 className={cx(
-                  "ml-2 h-5 w-5 shrink-0 ease-in-out",
-                  "group-radix-state-open:rotate-180 group-radix-state-open:duration-300"
+                  "ml-2 h-5 w-5 shrink-0 ease-in-out ",
+                  "group-radix-state-open:  rotate-180 group-radix-state-open:duration-300"
                 )}
               />
             </AccordionPrimitive.Trigger>
           </AccordionPrimitive.Header>
-          <AccordionPrimitive.Content className="pt-r1 w-full rounded-b-lg px-4 py-5">
-            <ul className="text-sm flex flex-col gap-y-4 ml-5">
+          <AccordionPrimitive.Content className="w-full px-4 py-5 rounded-b-lg pt-r1">
+            <ul className="flex flex-col ml-5 text-sm gap-y-4">
               {navLinks.map((x, index) => {
                 if (x.displayText) {
                   return (

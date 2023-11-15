@@ -2,7 +2,7 @@ import React from "react";
 import InvestCard from "./InvestCard";
 
 function Invest() {
-  return (
+    return (
     <div className="flex flex-wrap justify-center -mx-4">
         <h1 className="font-extrabold text-center text-gray-800 text-7xl">Invest </h1>
 

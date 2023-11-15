@@ -3,6 +3,7 @@ import useBreakpoint from "./useBreakpoint";
 import Icon from "./Icon";
 import Link from "./Link";
 import LinkTag from "./LinkTag";
+import image1 from "./../assets/award.png";
 
 const NavSections = ({ navSections }) => {
   const [data, setData] = useState(navSections);
@@ -16,36 +17,50 @@ const NavSections = ({ navSections }) => {
   }, [point, data]);
 
   console.log("data", data);
-  return navSections.map((x, index) => (
-    <div key={index}>
-      {x.displayText && (
-        <h3 className="mb-7 text-[14px] lg:text-lg font-black text-red-950">
-          {x.displayText}
-        </h3>
-      )}
 
-      <ul>
-        {x.navLinks.map((x, index) => {
-          if (x.displayText) {
-            return (
-              <li className="text-sm mb-7 text-red-950" key={index}>
-                <Link displayText={x.displayText} url={x.url} />
-                {x.tag && <LinkTag tag={x.tag} />}
-              </li>
-            );
-          }
-          if (x.icon) {
-            return (
-              <li className="mb-7 text-red-950" key={index}>
-                <Icon url={x.url} icon={x.icon} />
-              </li>
-            );
-          }
-          return null;
-        })}
-      </ul>
-    </div>
-  ));
+  return (
+    <>
+      {navSections.map((section, sectionIndex) => (
+        <div key={sectionIndex}>
+          {section.displayText && (
+            <h3 className="mb-7 text-[14px] lg:text-lg font-black text-black">
+              {section.displayText}
+            </h3>
+          )}
+
+          <ul>
+            {section.navLinks.map((link, linkIndex) => {
+              if (link.displayText) {
+                return (
+                  <li className="text-sm text-black mb-7" key={linkIndex}>
+                    <Link displayText={link.displayText} url={link.url} />
+                    <Icon url={link.url} icon={link.icon} />
+                    {link.tag && <LinkTag tag={link.tag} />}
+                  </li>
+                );
+              }
+              if (link.icon) {
+                return (
+                  <li className="text-black mb-7" key={linkIndex}>
+                    <Icon url={link.url} icon={link.icon} />
+                  </li>
+                );
+              }
+              return null;
+            })}
+          </ul>
+
+          {section.displayText === "Get In Touch" && (
+            <div className="mr-86 mb-7">
+              {" "}
+              {/* Change ml-86 to mr-86 for right alignment */}
+              <img src={image1} alt="Image Alt Text" className="w-full" />
+            </div>
+          )}
+        </div>
+      ))}
+    </>
+  );
 };
 
 export default NavSections;

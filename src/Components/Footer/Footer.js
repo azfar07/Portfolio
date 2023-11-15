@@ -7,7 +7,6 @@ import Accordion from "./Accordion";
 import BaselineLinks from "./BaselineLinks";
 import NavSections from "./NavSections";
 import SocialLinks from "./SocialLinks";
-
 const Footer = (props) => {
   console.log(props);
   const {
@@ -16,15 +15,15 @@ const Footer = (props) => {
     socialLinks,
     legalText,
     brandLink,
-    brandLogo
+    brandLogo,
   } = props;
 
   const mobileNavSections = navSections.slice(1);
 
   return (
-    <footer className="bg-[#1A212A] text-red-950 pt-14   lg:pt-36 pb-12">
+    <footer className="pb-12 text-black bg-white pt-14 lg:pt-36">
       <nav className="container px-5 mx-auto">
-        <div className="flex flex-col lg:flex-row mb-36">
+        <div className="flex flex-col mb-36">
           <div className="flex justify-center w-full mb-10 md:justify-start lg:w-1/2 xl:w-1/4 ">
             <Logo logo={brandLogo} link={brandLink} />
           </div>
@@ -34,13 +33,13 @@ const Footer = (props) => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center border-t gap-y-7 xl:flex-row xl:justify-between pt-9 align-center">
-          <SocialLinks socialLinks={socialLinks} />
-          <BaselineLinks baselineLinks={baselineLinks} legalText={legalText} />
-        </div>
-
         {/* <Accordion /> */}
       </nav>
+      <div className="flex flex-col items-center pb-6 bg-gray-100 border-t gap-y-7 pt-9 align-center">
+        {/* Display BaselineLinks above SocialLinks in a column */}
+        <BaselineLinks baselineLinks={baselineLinks} legalText={legalText} />
+        <SocialLinks socialLinks={socialLinks} />
+      </div>
     </footer>
   );
 };
