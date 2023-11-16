@@ -3,7 +3,7 @@ import InvestCard from "./InvestCard";
 
 function Invest() {
     return (
-    <div className="flex flex-wrap justify-center -mx-4">
+    <div className="flex flex-wrap justify-center mx-96">
         <h1 className="font-extrabold text-center text-gray-800 text-7xl">Invest </h1>
 
       <div className="flex justify-center w-full mb-4">

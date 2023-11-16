@@ -14,7 +14,7 @@ function PaidEarly() {
           </p>
           <div className="mt-4 md:mt-8">
             <Btn
-               btnClassName="w-full md:w-auto px-6 py-2 font-sans text-black transition duration-300 bg-white border border-black rounded-full"
+               btnClassName="w-72 md:w-auto px-6 py-2 font-sans text-black transition duration-300 bg-white border border-black rounded-full"
               name="Learn More >"
             />
           </div>

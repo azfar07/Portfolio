@@ -25,7 +25,7 @@ function DebitCard() {
             <div className="pt-4">
               <Btn
                 className="pt-2"
-                btnClassName="w-full md:w-auto px-6 py-2 font-sans text-black transition duration-300 bg-white border border-black rounded-full"
+                btnClassName="w-72 md:w-auto px-6 py-2 font-sans text-black transition duration-300 bg-white border border-black rounded-full"
                 name="Learn More >"
               />
               <p className="max-w-screen-md mx-auto mt-4 font-sans text-xs text-center sm:text-sm md:text-left">

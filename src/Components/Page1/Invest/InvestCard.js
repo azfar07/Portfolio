@@ -62,7 +62,7 @@ function InvestCard(props) {
             </div>
           </div>
           <div className="grid grid-cols-2 p-4 text-sm text-gray-600">
-            <div className="flex flex-col items-center flex-grow whitespace-nowrap">
+            <div className="flex flex-col items-start flex-grow whitespace-nowrap">
               <ul>
                 {Object.entries(props.duration).map(([key, value]) => (
                   <li key={key} className="text-xs font-thin text-gray-900">
