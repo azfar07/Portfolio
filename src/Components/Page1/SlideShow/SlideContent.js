@@ -3,9 +3,8 @@ import React from "react";
 function SlideContent() {
   return (
     <div className="absolute right-0 p-4 text-white top-32 left-72">
-     
       <div className="w-1/2">
-          <h1 className="mb-4 font-bold text-7xl">Welcome to My Slideshow</h1>
+        <h1 className="mb-4 font-bold text-7xl">Welcome to My Slideshow</h1>
         <input
           type="text"
           placeholder="Search..."
@@ -15,11 +14,16 @@ function SlideContent() {
           Search
         </button>
       </div>
-       <p className="mt-4 text-lg font-serifs">Already have an account ?</p>
-       <p className="mt-4 text-lg font-serifs">learh how we collect and use your information by visiting our Privacy Policy{" >"}  </p>
-       <p className="mt-4 text-lg font-serifs">Chime is a financial technology company,not a bank. Banking services provided by The Bancorp Bank,N.A or Stride Bank, N.A : Members FDIC </p>
+      <p className="mt-4 font-serif text-lg">Already have an account?</p>
+      <p className="mt-4 font-serif text-lg">
+        Learn how we collect and use your information by visiting our Privacy
+        Policy {" > "}
+      </p>
+      <p className="mt-4 font-serif text-lg">
+        Chime is a financial technology company, not a bank. Banking services
+        provided by The Bancorp Bank, N.A or Stride Bank, N.A : Members FDIC
+      </p>
     </div>
   );
 }
-
 export default SlideContent;

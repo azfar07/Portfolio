@@ -11,7 +11,7 @@ export const Slide = React.memo(function (StackedCarouselSlideProps) {
 
   console.log(coverImage);
   return (
-    <div className="card-card" draggable={false} style={{ height: "400px" }}>
+    <div className="card-card" draggable={false} style={{ height: "60vh" }}>
       <div className={`cover fill ${isCenterSlide ? "off" : "on"}`}>
         <div
           className="card-overlay fill"
@@ -22,17 +22,7 @@ export const Slide = React.memo(function (StackedCarouselSlideProps) {
       </div>
       <div className="detail fill">
         <div className="discription">
-          {/* <img
-            style={{ width: 100 }}
-            alt="j"
-            className="cover-image"
-            src={coverImage}
-          /> */}
-          {/* <video controls className="cover-image" width="100%" height="100%">
-            <source src={coverImage} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video> */}
-            <iframe
+          <iframe
             width="100%"
             height="100%"
             src={coverImage.replace("watch?v=", "embed/")}
@@ -40,7 +30,6 @@ export const Slide = React.memo(function (StackedCarouselSlideProps) {
             frameBorder="0"
             allowFullScreen
           ></iframe>
-          {/* <p>{text}</p> */}
         </div>
       </div>
     </div>

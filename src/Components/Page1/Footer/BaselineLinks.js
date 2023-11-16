@@ -3,7 +3,7 @@ import Link from "./Link";
 
 const BaselineLinks = ({ baselineLinks, legalText }) => {
   return (
-    <ul className="flex flex-col items-center gap-y-4 xl:flex-row gap-x-7 text-black text-[11px] ">
+    <ul className="flex flex-row items-center gap-y-4 xl:flex-row gap-x-7 text-black text-[11px] ">
     {baselineLinks.map((x, index) => (
       <React.Fragment key={index}>
         <li>

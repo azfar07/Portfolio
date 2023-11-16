@@ -44,7 +44,7 @@ function  MirrorCarousel() {
 
   return (
     <div className="card">
-      <div style={{ width: "90%", position: "relative" }}>
+      <div style={{ width: "100%", position: "relative" }}>
         <ResponsiveContainer
           carouselRef={ref}
           render={(width, carouselRef) => {
@@ -53,7 +53,7 @@ function  MirrorCarousel() {
                 ref={carouselRef}
                 slideComponent={Slide}
                 slideWidth={350}
-                height={100}
+                height={260}
                 carouselWidth={width}
                 data={data}
                 maxVisibleSlide={5}
@@ -65,6 +65,7 @@ function  MirrorCarousel() {
           }}
         />
       </div>
+      
     </div>
   );
 };

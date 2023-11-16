@@ -3,7 +3,7 @@ import useBreakpoint from "./useBreakpoint";
 import Icon from "./Icon";
 import Link from "./Link";
 import LinkTag from "./LinkTag";
-import image1 from "./../assets/award.png";
+import image1 from "./../../assets/award.png";
 
 const NavSections = ({ navSections }) => {
   const [data, setData] = useState(navSections);
@@ -54,7 +54,7 @@ const NavSections = ({ navSections }) => {
             <div className="mr-86 mb-7">
               {" "}
               {/* Change ml-86 to mr-86 for right alignment */}
-              <img src={image1} alt="Image Alt Text" className="w-full" />
+              <img src={image1} alt="Image Alt Text"  className="w-full max-w-[300px] max-h-[200px]" />
             </div>
           )}
         </div>

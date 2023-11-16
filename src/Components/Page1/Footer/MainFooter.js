@@ -6,7 +6,7 @@ import {
   legalText,
   brandLink,
   brandLogo
-} from "./../../mockData.js";
+} from "./../../../mockData.js";
 import React from "react";
 
 function MainFooter() {

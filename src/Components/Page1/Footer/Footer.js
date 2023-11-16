@@ -21,7 +21,7 @@ const Footer = (props) => {
   const mobileNavSections = navSections.slice(1);
 
   return (
-    <footer className="pb-12 text-black bg-white pt-14 lg:pt-36">
+    <footer className="pt-4 pb-12 text-black bg-white lg:pt-4">
       <nav className="container px-5 mx-auto">
         <div className="flex flex-col mb-36">
           <div className="flex justify-center w-full mb-10 md:justify-start lg:w-1/2 xl:w-1/4 ">
